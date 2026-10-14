@@ -37,7 +37,27 @@
             
         }
     }
+    //aqui muestra todos los platos actuales en la pila
+    public void mostrarPlatos(){
+        System.out.println("Torre de platos sucios: " + platosSucios);
+    }
 
+    //Aqui crearemos un metodo buscar, el cual nos busca un plato especifico 
+    // -1 si no esta o no hay
+    public boolean buscarPlato(String plato){
+        return platosSucios.search(plato) != -1;
+    }
+
+    //Aqui devolvemos la cantidad de platos que esten en la pila
+    public int cantidadPlatos(){
+        return platosSucios.size();
+    }
+
+    //aqui verificamos si la pila esta vacia
+    public boolean estaVacia(){
+
+        return platosSucios.isEmpty();
+    }
 
     
 
