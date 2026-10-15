@@ -37,14 +37,31 @@ public class MainClientes {
                     System.out.println("Atendiendo a: " + sistemaFila.atenderClientes());
                     break;
 
-                    
+                    case 3:
+                        //aqui consultmos quien va ser el proximo cliente
+                        System.out.println("El proximo cliente en ser atendido es: " + sistemaFila.verSiguienteCliente());
+
+                        case 4: 
+                        //Aqui mostramos la lista de la fila y cuantos faltan por atender 
+                        sistemaFila.mostrarFila();
+                        System.out.println("Total de clientes esperando: " + sistemaFila.cantidadClientes());
+
+                        break;
+                        case 5:
+                            System.out.println("Cerrando la Atencion al cliente.");
+
+
             
                 default:
-                    break;
+                    System.out.println("La pocion no es valida, digita un numero o opcion valida: ");
+
+                    
             }
+            System.out.println();
   
         
-        } while (condition);
+        } while (opcion != 5);
+        
 
         
     }

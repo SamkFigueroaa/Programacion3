@@ -41,4 +41,15 @@ public class ColaClientes {
     public boolean estaVacia(){
         return clientesFila.isEmpty();
     }
+
+    //aqui creamos el mto peek encargado de ver quien es el siguiente cliente
+    public  String verSiguienteCliente(){
+        if (!clientesFila.isEmpty()) {
+            return clientesFila.peek();
+            
+        } else {
+            return "No hay clientes en la fila.";
+            
+        }
+    }
 }
