@@ -6,7 +6,7 @@
     private Stack<String> platosSucios;
 
     //creamos el contructor para inicializar la pila
-    private PilaPlatos() {
+    public PilaPlatos() {
         platosSucios = new Stack<>();
     }
     //creamos el medoto push que e el engcargado de agregar un plato sucio
