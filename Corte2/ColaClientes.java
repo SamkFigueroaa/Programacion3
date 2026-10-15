@@ -26,5 +26,19 @@ public class ColaClientes {
             
         }
     }
-    
+    //aqui vamos a mostrar a todos los clientes que estan en nuestra fila
+    public void mostrarFila(){
+        System.out.println("Fila actul de clientes: " + clientesFila);
+
+    }
+
+    //nos retorna o devuelve la cantidad de clientes que esperan en la cola
+    public int cantidadClientes(){
+        return  clientesFila.size();
+    }
+
+    //aqui verificamos si la cola esta vacio 
+    public boolean estaVacia(){
+        return clientesFila.isEmpty();
+    }
 }
