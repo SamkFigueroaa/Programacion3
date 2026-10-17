@@ -27,6 +27,22 @@ public  class Ejercicio9_3 {
 
                 // de lo contrario seria un simbolo de cierre y lo validamos
             } else if (simbolo == ')' || simbolo == ']' || simbolo == '}') {
+                if (pilaSimbolos.isEmpty()) {
+                    estaBalanceado = false;
+                    // aqui basicamente miramos si hay un caracter de cierre pero la pila esta vacia, por ende sobra
+
+                    break;
+                    
+                }
+                char tope = pilaSimbolos.pop(); //nos saca el ultimo simboo de apertura que guardo
+
+                //luego hacemos verificacion de que el simbolo de cierre corresponda al suyo
+
+                if (((simbolo == ')' && tope != '(') ||
+                    (simbolo == ']' && tope != '[') ||
+                    (simbolo == '}' && tope != '{'))) {
+                    
+                }
                 
             } {
                 
