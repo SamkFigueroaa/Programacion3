@@ -41,12 +41,27 @@ public  class Ejercicio9_3 {
                 if (((simbolo == ')' && tope != '(') ||
                     (simbolo == ']' && tope != '[') ||
                     (simbolo == '}' && tope != '{'))) {
+                        estaBalanceado= false;
+                        break;
                     
                 }
                 
-            } {
+            } 
                 
-            }
+            
+            
+        }
+        //si al final de esto la pila tiene elemeno, es porque sobraron aperturas
+        if (!pilaSimbolos.isEmpty()) {
+            estaBalanceado = false;
+            
+        }
+
+        if (estaBalanceado) {
+            System.out.println("La exprecion esta bien equilibrada");
+            
+        } else {
+            System.out.println("La exprecion no esta bien equilibrada");
             
         }
     }
