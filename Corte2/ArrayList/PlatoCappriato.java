@@ -41,4 +41,8 @@ public class PlatoCappriato {
    public void setIngredientes(String ingredientes){
     this.ingredientes = ingredientes;
    }
+   
+   public void mostrarInformacion(){
+    System.out.println("Plato/Bebida: " + nombre + "| Precio: $" + precio + " | ingredientes: " + ingredientes);
+   }
 }
