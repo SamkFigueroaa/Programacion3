@@ -32,7 +32,40 @@ sc.nextLine();
       switch (opcion) {
         case 1:
             //Aqui usamos el .add() para agregar nuevos productos al menu
+            System.out.println("Ingrese el nombre del Plato o bebida: ");
+            String nombre = sc.nextLine();
+            System.out.println("Ingrese el precio: ");
+            double precio = sc.nextDouble();
+            sc.nextLine();
+            System.out.println("Ingrese los ingredientes: ");
+            String ingredientes = sc.nextLine();
+
+            listamenu.add(new PlatoCappriato(nombre, precio, ingredientes));
+            System.out.println("Nuevo producto Agregado con exito...");
             break;
+
+            case 2:
+                //Aqui usaremos el .size() y el .get() para ver a lista y el total de registros que hay en el menu
+                if (listamenu.isEmpty()) {
+                    System.out.println("El menu esta vacio en estos momentos.");
+
+                    
+                } else {
+                    System.out.println("\n--- LISTA DE PLATOS Y BEBIDAS ---");
+                    //con el .size() nos dice la cantidad de elementos que hay
+                    for (int i = 0; i < listamenu.size(); i++) {
+
+                        //luego el .get(i) es el que trae el objeto en una posicion especifica
+                        System.out.println((i + 1) + ". " + listamenu.get(i));
+                        
+                    }
+                    System.out.println("Totsl de registros en el menu: " + listamenu.size());
+                    
+                }
+                break;
+
+                case 3: 
+                
       
         default:
             break;
