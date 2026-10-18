@@ -94,9 +94,41 @@ sc.nextLine();
                     
                 }
                 break;
+                case 4: 
+                //ahora aqui utilizo el .remove() para eliminar un elemento que quiera
+                if (listamenu.isEmpty()) {
+                    System.out.println("El menu ya esta vacio.");
+                    
+                } else {  
+                    System.out.println("Ingrese el numero de la posicion (1 a " + listamenu.size() + ") que desee eliminar:");
+                    int pos = sc.nextInt() - 1;
+                    if (pos >= 0 && pos < listamenu.size()) {
+                        //con el remove sacamos el elemento de la lista y organiza el arraylist
+                        PlatoCappriato eliminado = listamenu.remove(pos);
+                        System.out.println("Se ha eliminado del menu: " + eliminado.getNombre());
+
+                        
+                    } else {
+                        System.out.println("Opcion incorrecta.");
+                        
+                    }
+                    
+                }
+                break;
+
+                case 5: 
+                //Aqui con el .clear() para limpiar todo el contenido de nuestra arraylist
+                listamenu.clear();
+                System.out.println("Se ha norrado todo el menu de Cappriato...");
+                break;
+
+                case 6: 
+                System.out.println("Saliendo Del Sistema de gestion de Cappriato...");
+                break;
 
       
         default:
+            System.out.println("Opcion no valida, vuelve a intentarlo.");
             break;
       }
             
