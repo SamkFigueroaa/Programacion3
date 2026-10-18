@@ -59,7 +59,7 @@ sc.nextLine();
                         System.out.println((i + 1) + ". " + listamenu.get(i));
                         
                     }
-                    System.out.println("Totsl de registros en el menu: " + listamenu.size());
+                    System.out.println("Total de registros en el menu: " + listamenu.size());
                     
                 }
                 break;
