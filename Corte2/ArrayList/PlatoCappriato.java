@@ -17,5 +17,28 @@ public class PlatoCappriato {
     
 
     //Comenzamos agregar los getters y setters para poder consutar y modificar
-   
+   public  String getNombre(){
+    return nombre;
+   }
+
+   public void setNombre(String nombre){
+    this.nombre = nombre;
+   }
+
+   public double getPrecio() {
+    return precio;
+
+   }
+
+   public void setPrecio(){
+    this.precio = precio;
+   }
+
+   public String getIngredientes(){
+    return  ingredientes;
+   }
+
+   public void setIngredientes(String ingredientes){
+    this.ingredientes = ingredientes;
+   }
 }
