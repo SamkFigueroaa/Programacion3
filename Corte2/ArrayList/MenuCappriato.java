@@ -65,7 +65,36 @@ sc.nextLine();
                 break;
 
                 case 3: 
-                
+                // aqui vamos a usar el .set() para la modificacion de un producto o elemento en especifico
+                if (listamenu.isEmpty()) {
+                    System.out.println("No hay platos para modificar");
+
+                    
+                } else {
+                    System.out.println("Ingrese el numero de la posicion (1 a" + listamenu.size() + ") que desea actualizar:");
+                    int index = sc.nextInt() - 1 ;
+                    if (index >= 0 && index < listamenu.size()) {
+                        sc.nextLine();
+                        System.out.println("Nuevo nombre: ");
+                        String nuevoNombre = sc.nextLine();
+                        System.out.println("Nuevo Precio: ");
+                        double nuevoPrecio = sc.nextDouble();
+                        sc.nextLine();
+                        System.out.println("Nuevos ingredientes: ");
+                        String nuevosIngredientes = sc.nextLine();
+
+                        // con el .set() reemplazamos el objeto antiguo y lo reemplazamos por el nuevo
+                        listamenu.set(index, new  PlatoCappriato(nuevoNombre, nuevoPrecio, nuevosIngredientes));
+                        System.out.println("Plato actualizado correctamente");
+                        
+                    } else {
+                        System.out.println("Numero de posicion incorrecto.");
+                        
+                    }
+                    
+                }
+                break;
+
       
         default:
             break;
