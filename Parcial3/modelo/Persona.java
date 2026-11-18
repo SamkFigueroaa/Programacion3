@@ -39,7 +39,7 @@ public abstract class Persona {
         this.id = id;
     }
 
-    public String getemail(){
+    public String getEmail(){
         return email;
     }
     
