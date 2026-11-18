@@ -13,6 +13,7 @@ public class Ejercicio7 {
 
         for (int i = 0; i < A.length; i++) {
             System.out.println("A[" + i + "]=" + A[i]);
+            
 
         }
         System.out.println();

@@ -24,6 +24,7 @@ public class MenuCappriato {
             System.out.println("2. Ver el menu completo y total de productos");
             System.out.println("3. Actualizar informacion de un plato");
             System.out.println("4. Eliminar un plato del menu");
+            System.out.println("5. Vaciar todo el menu");
             System.out.println("6. Salir");
             System.out.println("Seleccione una opcion: ");
 opcion = sc.nextInt();
@@ -56,7 +57,8 @@ sc.nextLine();
                     for (int i = 0; i < listamenu.size(); i++) {
 
                         //luego el .get(i) es el que trae el objeto en una posicion especifica
-                        System.out.println((i + 1) + ". " + listamenu.get(i));
+                        System.out.println((i + 1) + ". ");
+                        listamenu.get(i).mostrarInformacion();
                         
                     }
                     System.out.println("Total de registros en el menu: " + listamenu.size());
@@ -119,7 +121,7 @@ sc.nextLine();
                 case 5: 
                 //Aqui con el .clear() para limpiar todo el contenido de nuestra arraylist
                 listamenu.clear();
-                System.out.println("Se ha norrado todo el menu de Cappriato...");
+                System.out.println("Se ha borrado todo el menu de Cappriato...");
                 break;
 
                 case 6: 
